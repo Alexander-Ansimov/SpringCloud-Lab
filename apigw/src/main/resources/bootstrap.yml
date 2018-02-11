@@ -4,3 +4,15 @@ spring:
 
 server:
   port: 8080
+
+zuul:
+  ignoredServices: '*'
+  routes:
+    clients:
+      path: /dinner/**
+      serviceId: Guest
+      stripPrefix: false
+    accounts:
+      path: /menu/**
+      serviceId: Order
+      stripPrefix: true

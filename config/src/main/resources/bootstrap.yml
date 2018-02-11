@@ -1,6 +1,9 @@
 spring:
   application:
     name: Config
+#  cloud:
+#    config:
+#      uri:
 
 server:
   port: 9000
