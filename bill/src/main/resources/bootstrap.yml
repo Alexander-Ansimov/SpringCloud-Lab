@@ -1,33 +1,7 @@
 spring:
-  application.name: Bill
-  cloud.config.uri: https://github.com/Alexander-Ansimov/SpringCloud-Lab/tree/config/app-configuration
-
-#
-#spring:
-#  application:
-#    name: Bill
-#  datasource:
-#    url: jdbc:mysql://localhost:3306/restaurant
-#    username: root
-#    password: admin
-#    driver-class-name: com.mysql.jdbc.Driver
-#  jpa:
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.MySQL5Dialect
-#  rabbitmq:
-#      host: localhost
-#      port: 5672
-#      username: guest
-#      password: guest
-#
-#server:
-#  port: 8084
-#
-#eureka:
-#  client:
-#    fetchRegistry: true
-#    registerWithEureka: true
-#    serviceUrl:
-#      defaultZone: http://localhost:8761/eureka
-
+  cloud:
+    config:
+      uri: http://localhost:9000
+      label: config
+  application:
+    name: Bill
