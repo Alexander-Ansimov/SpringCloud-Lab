@@ -22,6 +22,11 @@ public class Runner {
 
 
    //     guestClient.startDinner(menuClient.getMenu());
-        guestClient.finishDinner(i);
+        try {
+            guestClient.finishDinner(i);
+        } catch (Exception e) {
+
+        }
+
     }
 }
