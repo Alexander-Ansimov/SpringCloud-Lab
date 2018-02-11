@@ -19,9 +19,13 @@ public class BillController {
         billService.createBill(tableId, orderId);
     }
 
-    @HystrixCommand
+    @HystrixCommand(fallbackMethod = "defaultAnswer")
     @DeleteMapping("/bills/{tableId}")
     public void payBills(@PathVariable Integer tableId) {
         billService.payBills(tableId);
+    }
+
+    public void defaultAnswer(Integer tableId, Throwable t) {
+
     }
 }

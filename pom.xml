@@ -42,6 +42,7 @@
     </dependencyManagement>
 
     <modules>
+        <module>user</module>
         <module>guest</module>
         <module>table</module>
         <module>order</module>
