@@ -1,9 +1,8 @@
 spring:
   application:
     name: Config
-#  cloud:
-#    config:
-#      uri:
+  cloud:
+    config.server.git.uri: https://github.com/Alexander-Ansimov/SpringCloud-Lab/tree/config/app-configuration
 
 server:
   port: 9000

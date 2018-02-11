@@ -1,6 +1,6 @@
 spring:
   application.name: Bill
-  cloud.config.uri: http://host:8182
+  cloud.config.uri: https://github.com/Alexander-Ansimov/SpringCloud-Lab/tree/config/app-configuration
 
 #
 #spring:
