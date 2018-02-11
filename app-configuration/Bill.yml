@@ -15,7 +15,7 @@ spring:
       password: guest
 
 server:
-  port: 8084
+  port: 8094
 
 eureka:
   client:
