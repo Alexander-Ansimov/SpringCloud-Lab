@@ -15,12 +15,13 @@ public class GuestController {
     @Autowired
     private DinnerService dinnerService;
 
-    @Value("testEvent")
-    private Integer testEventNumber;
+    @Value("${testEventNumber}")
+    private String testEventNumber;
 
     @PostMapping("/dinner")
     public Integer startDinner(@RequestBody List<Integer> menuItems) {
-        return testEventNumber + dinnerService.startDinner(menuItems);
+        return Integer.parseInt(testEventNumber)
+                + dinnerService.startDinner(menuItems);
     }
 
     @DeleteMapping("/dinner/{tableId}")
