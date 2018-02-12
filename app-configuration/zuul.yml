@@ -11,7 +11,7 @@ zuul:
     menu:
       path: /menu/**
       serviceId: Order
-      stripPrefix: true
+      stripPrefix: false
     search:
       path: /
       url: http://google.com
