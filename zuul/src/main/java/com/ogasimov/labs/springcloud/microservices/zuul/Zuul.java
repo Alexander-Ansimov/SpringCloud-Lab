@@ -1,4 +1,4 @@
-package com.ogasimov.labs.springcloud.microservices.apigw;
+package com.ogasimov.labs.springcloud.microservices.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

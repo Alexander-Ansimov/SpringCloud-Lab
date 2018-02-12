@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ogasimov.labs.springcloud.microservices</groupId>
-    <artifactId>apigw</artifactId>
+    <artifactId>zuul</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <parent>

@@ -51,7 +51,7 @@
         <module>eureka</module>
         <module>dashboard</module>
         <module>turbine</module>
-        <module>apigw</module>
+        <module>zuul</module>
         <module>config</module>
     </modules>
 </project>
