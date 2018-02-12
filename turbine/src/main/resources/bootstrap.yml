@@ -1,9 +1,0 @@
-spring:
-  cloud:
-    config:
-      uri: http://localhost:9000
-      label: config
-  application:
-    name: turbine
-
-#TODO  need for fixing

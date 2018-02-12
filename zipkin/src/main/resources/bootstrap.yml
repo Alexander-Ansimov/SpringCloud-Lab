@@ -1,6 +1,3 @@
 spring:
   application:
     name: Zipkin
-
-server:
-  port: 9001
