@@ -14,15 +14,15 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RefreshScope
 public class GuestController {
+
     @Autowired
     private DinnerService dinnerService;
-
-    @Value("${testEventNumber}")
-    private String testEventNumber;
+    @Autowired
+    private RefreshData refreshData;
 
     @PostMapping("/dinner")
     public Integer startDinner(@RequestBody List<Integer> menuItems) {
-        return Integer.parseInt(testEventNumber)
+        return Integer.parseInt(refreshData.getTestEventNumber())
                 + dinnerService.startDinner(menuItems);
     }
 
