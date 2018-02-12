@@ -1,4 +1,4 @@
 server:
   port: 8081
 
-testEventNumber: 100
+testEventNumber: 10000
