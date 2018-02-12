@@ -4,4 +4,4 @@ spring:
       uri: http://localhost:9000
       label: config
   application:
-    name: order
+    name: zuul

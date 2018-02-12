@@ -1,18 +1,7 @@
 spring:
+  cloud:
+    config:
+      uri: http://localhost:9000
+      label: config
   application:
-    name: User
-  rabbitmq:
-    host: localhost
-    port: 5672
-    username: guest
-    password: guest
-
-server:
-  port: 8100
-
-eureka:
-  client:
-    fetchRegistry: true
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka
+    name: user

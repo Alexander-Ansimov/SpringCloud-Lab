@@ -10,8 +10,8 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @EnableEurekaClient
 @EnableFeignClients
 @EnableHystrix
-public class GuestApp {
+public class Guest {
     public static void main(String[] args) {
-        SpringApplication.run(GuestApp.class, args);
+        SpringApplication.run(Guest.class, args);
     }
 }
