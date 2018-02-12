@@ -4,11 +4,14 @@ server:
 zuul:
   ignoredServices: '*'
   routes:
-    clients:
+    dinner:
       path: /dinner/**
       serviceId: Guest
       stripPrefix: false
-    accounts:
+    menu:
       path: /menu/**
       serviceId: Order
       stripPrefix: true
+    search:
+      path: /
+      url: http://google.com
