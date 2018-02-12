@@ -23,7 +23,7 @@ public class Runner {
 
    //     guestClient.startDinner(menuClient.getMenu());
         try {
-            guestClient.finishDinner(i);
+   //         guestClient.finishDinner(i);
         } catch (Exception e) {
 
         }
