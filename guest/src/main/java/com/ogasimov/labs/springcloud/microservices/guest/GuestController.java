@@ -16,11 +16,11 @@ public class GuestController {
     private DinnerService dinnerService;
 
     @Value("testEvent")
-    private String testEventName;
+    private Integer testEventNumber;
 
     @PostMapping("/dinner")
-    public String startDinner(@RequestBody List<Integer> menuItems) {
-        return testEventName + "  " + dinnerService.startDinner(menuItems);
+    public Integer startDinner(@RequestBody List<Integer> menuItems) {
+        return testEventNumber + dinnerService.startDinner(menuItems);
     }
 
     @DeleteMapping("/dinner/{tableId}")
