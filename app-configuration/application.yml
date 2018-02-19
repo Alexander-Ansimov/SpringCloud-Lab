@@ -16,4 +16,4 @@ management:
   security:
     enabled: false
 
-testValue: 1234-00-3333
+testValue: 1234-00-3333-111111
