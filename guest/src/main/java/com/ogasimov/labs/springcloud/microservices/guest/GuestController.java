@@ -5,11 +5,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RefreshScope
@@ -22,8 +18,12 @@ public class GuestController {
 
     @PostMapping("/dinner")
     public Integer startDinner(@RequestBody List<Integer> menuItems) {
-        return Integer.parseInt(refreshData.getTestEventNumber())
-                + dinnerService.startDinner(menuItems);
+        return dinnerService.startDinner(menuItems);
+    }
+
+    @GetMapping
+    public Integer getRefreshedValue() {
+        return Integer.parseInt(refreshData.getTestEventNumber());
     }
 
     @DeleteMapping("/dinner/{tableId}")
