@@ -1,0 +1,7 @@
+endpoints:
+  refresh:
+    enabled: true
+
+management:
+  security:
+    enabled: false
