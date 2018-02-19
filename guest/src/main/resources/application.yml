@@ -1,6 +1,6 @@
-endpoints:
-  refresh:
-    enabled: true
+#endpoints:
+#  refresh:
+#    enabled: true
 
 management:
   security:
