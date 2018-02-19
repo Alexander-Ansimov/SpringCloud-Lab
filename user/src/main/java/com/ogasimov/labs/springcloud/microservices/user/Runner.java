@@ -1,6 +1,7 @@
 package com.ogasimov.labs.springcloud.microservices.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -13,6 +14,9 @@ public class Runner {
     @Autowired
     private MenuClient menuClient;
 
+    @Value("${testValue}")
+    private String testValue;
+
     @Scheduled(fixedDelay = 2000)
     public void run() {
 
@@ -20,6 +24,7 @@ public class Runner {
         int i = (int) (Math.random() * range) + 1;
 
 
+        System.out.println(testValue);
 
    //     guestClient.startDinner(menuClient.getMenu());
         try {

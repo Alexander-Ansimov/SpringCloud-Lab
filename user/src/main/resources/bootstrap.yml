@@ -2,6 +2,6 @@ spring:
   cloud:
     config:
       uri: http://localhost:9000
-      label: config
+      label: Cloud_Bus
   application:
     name: user
