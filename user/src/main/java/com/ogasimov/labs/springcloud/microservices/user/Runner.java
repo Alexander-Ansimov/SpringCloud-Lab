@@ -17,7 +17,7 @@ public class Runner {
     private MenuClient menuClient;
 
     @Value("${testValue}")
-    private String testValue;
+    private volatile String testValue;
 
     @Scheduled(fixedDelay = 2000)
     public void run() {
