@@ -16,4 +16,4 @@ management:
   security:
     enabled: false
 
-testValue: 1234-OOOOOOOOOO
+testValue: Success  !!!!
